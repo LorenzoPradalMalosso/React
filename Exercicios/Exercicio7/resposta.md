@@ -9,15 +9,15 @@ git log --oneline -1
 
 ## Resultado
 
-O repositório já possui um commit inicial identificável:
+O repositório possui o commit desta entrega:
 
 ```text
-e9f8538 10/09/2026 - Criação do repositório React - voltado ao estudo e desenvolvimento do framework
+a2f7e65 feat: conclui exercícios iniciais de React
 ```
 
-O arquivo `.gitignore` do projeto Vite impede que `node_modules` seja incluído no versionamento. As alterações desta entrega devem ser registradas em um próximo commit com uma mensagem descritiva, por exemplo:
+O arquivo `.gitignore` do projeto Vite impede que `node_modules` seja incluído no versionamento. O commit inclui o README, as entregas dos exercícios e o projeto To-Do Pro; o arquivo `ERROS.md` foi mantido fora dele por não fazer parte da entrega.
 
 ```bash
-git add README.md Exercicios todo-pro
-git commit -m "feat: conclui exercícios iniciais de React"
+git status
+git log --oneline -1
 ```
