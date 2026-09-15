@@ -22,6 +22,7 @@ const TodoForm = ({addTask}) => {
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" name="" id="" value={task} onChange={(e) => setTask(e.target.value)}/>
+            {/* onChange atualiza o estado a cada letra digitada no teclado */}
             <button type="submit">Adicionar</button>
         </form>
     );
