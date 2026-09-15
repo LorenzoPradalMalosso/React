@@ -538,8 +538,8 @@ Um commit é um registro de um conjunto coerente de alterações. Mensagens úte
 
 **Verificação:** seu histórico deve conter um commit identificável da primeira entrega.
 
-## 9. Documentando o projeto
-Um README útil responde o que é o projeto, o que é necessário e como executá-lo. Para o To-Do Pro, inclua o título, uma breve descrição, os pré-requisitos e os comandos `npm install` e `npm run dev`.
+## <a href="todo-pro/README.md">9. Documentando o projeto</a>
+
 
 ### <a href="Exercicios/Exercicio8/">Exercício 8 - Teste de reprodução</a>
 Peça a um colega para abrir o README e executar o projeto. Depois registre pelo menos uma melhoria feita a partir do teste.
@@ -563,12 +563,12 @@ Entregue um projeto React com Vite que contenha:
 
 ### Checklist de entrega
 
-- [ ] O projeto executa com `npm install` e `npm run dev`.
-- [ ] O nome To-Do Pro e sua finalidade aparecem na tela.
-- [ ] Existem pelo menos três tarefas com diferença entre pendente e concluída.
-- [ ] A interface usa estrutura semântica e não há erro no console.
-- [ ] O README explica instalação e execução.
-- [ ] O repositório possui pelo menos dois commits e consigo explicar sua estrutura.
+- [x] O projeto executa com `npm install` e `npm run dev`.
+- [x] O nome To-Do Pro e sua finalidade aparecem na tela.
+- [x] Existem pelo menos três tarefas com diferença entre pendente e concluída.
+- [x] A interface usa estrutura semântica e não há erro no console.
+- [x] O README explica instalação e execução.
+- [x] O repositório possui pelo menos dois commits e consigo explicar sua estrutura.
 
 ## 11. Autoavaliação
 
