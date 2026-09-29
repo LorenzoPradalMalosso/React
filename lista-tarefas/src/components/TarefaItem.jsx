@@ -10,7 +10,7 @@ function TarefaItem({
     mudar = () => {},
     remover = () => {},
 }) {
-    const statusLabel = concluida ? "Concluida" : "Pendente";
+    const statusLabel = concluida ? "Concluída" : "Pendente";
 
     return(
         <article className="tarefa-item">
@@ -20,6 +20,7 @@ function TarefaItem({
             </header>
             <p className="tarefa-desc">{descricao}</p>
             <TarefaAction
+                concluida={concluida}
                 aoCompletar={() => mudar(id)}
                 aoRemover={() => remover(id)}
             />

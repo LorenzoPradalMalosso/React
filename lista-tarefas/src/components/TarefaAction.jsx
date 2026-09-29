@@ -1,12 +1,12 @@
 //Método para Controlar as ações  das tarefas via CallBack
 
-function TarefaAction({aoCompletar, aoRemover}){
+function TarefaAction({ aoCompletar, aoRemover, concluida }) {
     return(
         <div className="tarefa-action">
-            <button type="buttoon" className="btn-done" onClick={aoCompletar}>
-                Concluir
+            <button type="button" className="btn-done" onClick={aoCompletar}>
+                {concluida ? "Reabrir" : "Concluir"}
             </button>
-            <button type="buttoon" className="btn-delete" onClick={aoRemover}>
+            <button type="button" className="btn-delete" onClick={aoRemover}>
                 Deletar
             </button>
         </div>

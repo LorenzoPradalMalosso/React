@@ -289,3 +289,43 @@ Digite o Comando no Terminal
 ```bash
 type nul > src/components/TarefaFilters.jsx
 ```
+
+---
+
+### Semana 4 - O `useEffect` e seu poder no Ciclo de Vida do componente e na Persistência de Dados
+
+**Tema:** Hook do `useEffect`, Dominar ciclo de vida dos componentes, Sincronização e dados e interfaces web inclusivas.
+
+### Bloco 1 - O que é hook `useEffect` e os "Efeitos Colaterais"
+
+#### **Funções puras vs Efeito Colateral do `useEffect`**
+
+Numa função em React um componente funcional deve ser uma função pura: recebe `props` e `states`, e retorna marcações `JSX`. Ou seja, as mesmas entradas sempre devolvem a mesma saída, *sem modificar nada fora do seu escopo*.
+
+Porém, aplicações reais precisam interagir com o mundo exterior (Efeitos Colaterais). Para isso usamos o `useEffect`, que funciona como métodos para serem executados quando precisamos interagir com um backend.
+
+#### **A sintaxe do `useEffect`**
+
+O hook `useEffect` foi criado para abrigar efeitos colaterais de forma controlada e segura:
+
+```jsx
+import {useEffect} from "react";
+
+useEffect(() => {
+    // 1. Código do efeito colateral (executado após a renderização do componente)
+
+    return () => {
+        // 2. Função de limpeza (opcional)
+    };
+},
+[
+    // 3. Array de Dependência
+]
+);
+```
+
+**Ciclo do `useEffect`**
+
+1. Montagem da ação [Executa após a renderização do componente]
+2. Atualização [Mudança de props e sates do componente se necessário - etapa opcional]
+3. Desmontagem [Efeito da ação vai sumir ou reiniciar]

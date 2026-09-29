@@ -1,0 +1,223 @@
+.app-container {
+	:root {
+		color-scheme: light;
+		background: #f6f8f7;
+	}
+
+	#root {
+		width: 100%;
+		max-width: none;
+		margin: 0;
+		border: 0;
+		text-align: left;
+	}
+
+	.app-container {
+	width: min(100% - 40px, 820px);
+	margin: 0 auto;
+	padding: 56px 0 72px;
+	text-align: left;
+}
+
+.app-header {
+	padding-bottom: 28px;
+	border-bottom: 1px solid var(--border);
+}
+
+.app-header h1 {
+	margin: 0;
+	color: var(--text-strong);
+	font-size: 44px;
+	line-height: 1.1;
+	letter-spacing: 0;
+}
+
+.app-header p {
+	margin-top: 10px;
+	color: var(--muted);
+}
+
+.tarefa-form {
+	margin: 28px 0 24px;
+}
+
+.form-group {
+	display: flex;
+	gap: 10px;
+}
+
+.form-group input {
+	flex: 1;
+	min-width: 0;
+	padding: 12px 14px;
+	border: 1px solid var(--border);
+	border-radius: 6px;
+	background: var(--surface);
+	color: var(--text-strong);
+}
+
+.form-group input:focus {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+.btn-add,
+.filter-btn,
+.tarefa-action button {
+	min-height: 42px;
+	padding: 9px 15px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	font-size: 0.92rem;
+	font-weight: 650;
+	cursor: pointer;
+}
+
+.btn-add {
+	background: var(--accent);
+	color: white;
+}
+
+.error-message {
+	margin-top: 8px;
+	color: #b42318;
+	font-size: 0.9rem;
+}
+
+.tarefa-filters {
+	display: flex;
+	gap: 8px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid var(--border);
+}
+
+.filter-btn {
+	background: transparent;
+	border-color: var(--border);
+	color: var(--text);
+}
+
+.filter-btn.active {
+	background: var(--accent-soft);
+	border-color: var(--accent);
+	color: var(--accent);
+}
+
+.tarefa-contador {
+	margin: 17px 0;
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+
+.tarefa-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+	gap: 12px;
+}
+
+.tarefa-item {
+	display: flex;
+	min-height: 170px;
+	flex-direction: column;
+	padding: 17px;
+	border: 1px solid var(--border);
+	border-radius: 7px;
+	background: var(--surface);
+}
+
+.tarefa-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.tarefa-header h3 {
+	margin: 0;
+	color: var(--text-strong);
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+.tarefa-badge {
+	flex: 0 0 auto;
+	padding: 3px 8px;
+	border-radius: 4px;
+	background: #fff1d6;
+	color: #805400;
+	font-size: 0.75rem;
+}
+
+.tarefa-desc {
+	margin: 9px 0 16px;
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+
+.tarefa-action {
+	display: flex;
+	gap: 8px;
+	margin-top: auto;
+}
+
+.tarefa-action button {
+	min-height: 36px;
+	padding: 6px 11px;
+	font-size: 0.85rem;
+}
+
+.btn-done {
+	background: var(--accent-soft);
+	color: var(--accent);
+}
+
+.btn-delete {
+	background: #fff0ed;
+	color: #a33120;
+}
+
+.tarefa-footer {
+	margin-top: 12px;
+	color: var(--muted);
+	font-size: 0.8rem;
+}
+
+.empty {
+	padding: 28px 0;
+	color: var(--muted);
+	text-align: center;
+}
+
+button:hover {
+	filter: brightness(0.96);
+}
+
+button:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+	.app-container {
+		width: min(100% - 28px, 820px);
+		padding-top: 36px;
+	}
+
+	.app-header h1 {
+		font-size: 32px;
+	}
+
+	.form-group {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.tarefa-filters {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.filter-btn {
+		padding-inline: 7px;
+	}
+}

@@ -14,7 +14,7 @@ function TarefaForm({ aoAddTarefa }) {
 
         // Verificar se o título da tarefa é válido
         if(titulo.trim().length < 4){
-            setError("O títlo da tarefa deve ter pelo menos 4 caracteres");
+            setError("O título da tarefa deve ter pelo menos 4 caracteres");
             return;
         }
 
